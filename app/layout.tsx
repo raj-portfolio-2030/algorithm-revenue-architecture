@@ -6,7 +6,7 @@ const display = Cormorant_Garamond({ variable: '--font-display', subsets: ['lati
 const sans = Manrope({ variable: '--font-sans', subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL ?? 'http://localhost:3001'),
+  metadataBase: new URL('https://algorithm-revenue-architecture.rajakumarmba12.chatgpt.site'),
   title: 'The Algorithm Revenue Architecture | Building the Next Revenue Engine',
   description: 'A strategic commercial architecture connecting The Algorithm’s products, engineering capabilities, markets and customer relationships into a repeatable revenue system.',
   openGraph: {
