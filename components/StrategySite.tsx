@@ -35,6 +35,7 @@ export default function StrategySite() {
   const [activeRoadmap, setActiveRoadmap] = useState(0);
   const [activeScenario, setActiveScenario] = useState(1);
   const [activeTeam, setActiveTeam] = useState(0);
+  const [activeBookPreview, setActiveBookPreview] = useState<number | null>(null);
   const [activeSection, setActiveSection] = useState('overview');
 
   useEffect(() => {
@@ -209,8 +210,35 @@ export default function StrategySite() {
 
       <section className="library section-space shell" id="library">
         <SectionHead index="14" label="GTM Intelligence Library" title="The architecture becomes execution." copy="The executive website presents the system. The playbooks will translate it into detailed market, account, sales and expansion motions." />
-        <div className="library-grid">{playbooks.map(book => <article key={book.number}><span className="book-num">{book.number}</span><div><p className="data-label">Strategy resource</p><h3>{book.name}</h3><p>{book.description}</p></div>{book.available ? <a href={book.path} download>Download PDF <span aria-hidden="true">↓</span></a> : <span className="preparing" aria-label={`${book.name}: Document being prepared`}>Document being prepared</span>}</article>)}</div>
-        <p className="library-note">Download availability is controlled in <code>data/site.ts</code>. No placeholder PDFs have been fabricated.</p>
+        <div className="library-grid">{playbooks.map((book, index) => {
+          const previewOpen = activeBookPreview === index;
+          return <article className={previewOpen ? 'preview-open' : ''} key={book.number} onKeyDown={event => { if (event.key === 'Escape') setActiveBookPreview(null); }}>
+            <a
+              className="library-primary"
+              href={book.file}
+              download
+              aria-controls={`book-preview-${index}`}
+              aria-expanded={previewOpen}
+              onClick={event => {
+                if (window.matchMedia('(max-width: 680px)').matches) {
+                  event.preventDefault();
+                  setActiveBookPreview(previewOpen ? null : index);
+                }
+              }}
+            >
+              <span className="book-num">{book.number}</span>
+              <div><p className="data-label">Strategy resource</p><h3>{book.name}</h3><p>{book.description}</p><span className="mobile-preview-label">{previewOpen ? 'Close preview' : 'Tap to preview'} <i aria-hidden="true">{previewOpen ? '−' : '+'}</i></span></div>
+            </a>
+            {book.ready && <a className="library-download" href={book.file} download aria-label={`Download ${book.name} PDF`}>Download PDF <span aria-hidden="true">↓</span></a>}
+            <aside className="library-preview" id={`book-preview-${index}`} aria-label={`${book.name} preview`}>
+              <header><span>{book.number} / {book.type}</span><h4>{book.name}</h4><p>{book.summary}</p></header>
+              <div className="preview-meta"><div><small>What it covers</small><p>{book.covers}</p></div><div><small>Ideal reader</small><p>{book.reader}</p></div></div>
+              <div className="preview-sections"><small>Key sections</small><ol>{book.sections.map((section, sectionIndex) => <li key={section}><span>0{sectionIndex + 1}</span>{section}</li>)}</ol></div>
+              <footer><span>Document type</span><strong>{book.type}</strong></footer>
+            </aside>
+          </article>;
+        })}</div>
+        <p className="library-note">Seven executive resources are available as direct PDF downloads.</p>
       </section>
 
       <section className="closing">
