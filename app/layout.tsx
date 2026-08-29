@@ -7,17 +7,17 @@ const sans = Manrope({ variable: '--font-sans', subsets: ['latin'], weight: ['40
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://algorithm-revenue-architecture.rajakumarmba12.chatgpt.site'),
-  title: 'The Algorithm Revenue Architecture | Building the Next Revenue Engine',
-  description: 'A strategic commercial architecture connecting The Algorithm’s products, engineering capabilities, markets and customer relationships into a repeatable revenue system.',
+  title: 'The Algorithm Commercial Growth Architecture | Building the Next Revenue Engine',
+  description: 'A CEO-facing commercial operating system connecting products, regulated engineering, market intelligence, customer relationships and account expansion.',
   openGraph: {
-    title: 'The Algorithm Revenue Architecture | Building the Next Revenue Engine',
-    description: 'Product IP, engineering, markets and account intelligence connected into a repeatable revenue system.',
+    title: 'The Algorithm Commercial Growth Architecture | Building the Next Revenue Engine',
+    description: 'Products, regulated engineering, account intelligence and customer expansion connected into one commercial operating system.',
     images: [{ url: '/og.png', width: 1680, height: 945, alt: 'Building the Next Revenue Engine' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Algorithm Revenue Architecture | Building the Next Revenue Engine',
-    description: 'Product IP, engineering, markets and account intelligence connected into a repeatable revenue system.',
+    title: 'The Algorithm Commercial Growth Architecture | Building the Next Revenue Engine',
+    description: 'Products, regulated engineering, account intelligence and customer expansion connected into one commercial operating system.',
     images: ['/og.png'],
   },
 };
