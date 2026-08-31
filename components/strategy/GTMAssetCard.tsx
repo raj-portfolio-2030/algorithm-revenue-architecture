@@ -29,6 +29,6 @@ export function GTMAssetModalContent({ asset }: { asset: LibraryAsset }) {
       <div><p className="data-label">Key sections</p><ol>{asset.sections.map((section, index) => <li key={section}><span>{String(index + 1).padStart(2, '0')}</span>{section}</li>)}</ol></div>
       <div className="asset-modal-actions"><a className="button primary" href={asset.file} target="_blank" rel="noreferrer">Read More <span aria-hidden="true">↗</span></a><a className="button outline" href={asset.file} download>Download {asset.format} <span aria-hidden="true">↓</span></a></div>
     </div>
-    <div className="asset-document-preview">{isPdf ? <iframe title={`${asset.name} document preview`} src={`${asset.file}#view=FitH&toolbar=0`} /> : <div className="presentation-preview"><span>PPTX</span><h3>Leadership conversation deck</h3><p>Use Read More to open the presentation in a compatible viewer, or download the original file.</p></div>}</div>
+    <div className="asset-document-preview">{isPdf ? <iframe tabIndex={-1} title={`${asset.name} document preview`} src={`${asset.file}#view=FitH&toolbar=0`} /> : <div className="presentation-preview"><span>PPTX</span><h3>Leadership conversation deck</h3><p>Use Read More to open the presentation in a compatible viewer, or download the original file.</p></div>}</div>
   </div>;
 }

@@ -42,7 +42,7 @@ export const opportunityEngines = [
 export const discussionContext: EvidenceItem[] = [
   { state: 'Documented Fact', text: 'Three product engines and a broad regulated-engineering capability are documented in the supplied materials.' },
   { state: 'Commercial Hypothesis', text: 'Founder, network and referral-led acquisition can be strengthened with systematic account intelligence.' },
-  { state: 'CEO Input Required', text: 'Approximately 10 services relationships were mentioned in discussion; identities, scope, proof and expansion potential require validation.' },
+  { state: 'CEO Input Required', text: 'Existing service relationships require a structured audit; identities, scope, proof and expansion potential remain unconfirmed.' },
   { state: 'CEO Input Required', text: 'Current customer counts, revenue, margins, pipeline, conversion, capacity and referenceable outcomes are not supplied.' },
 ];
 
@@ -88,7 +88,7 @@ export const libraryAssets: LibraryAsset[] = [
     summary: 'An enterprise motion for entering through one claims or document workflow without forcing unnecessary core replacement.',
     covers: 'Insurance ICP, Guidewire and Duck Creek adjacency, claims-document triggers, business-case models, guided proof and enterprise value drivers.',
     reader: 'Insurance operations leaders, enterprise sellers, claims transformation teams and solution architects.',
-    sections: ['Commercial thesis', 'Buyer committee', 'Adjacent monopoly boundary', 'Competitive intelligence', 'Five-stage sales process', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
+    sections: ['Commercial position', 'Buyer committee', 'Adjacent monopoly boundary', 'Competitive intelligence', 'Five-stage sales process', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
     id: 'sentienguard-playbook', number: '03', name: 'SentienGuard GTM Playbook', file: 'downloads/sentienguard-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
@@ -96,7 +96,7 @@ export const libraryAssets: LibraryAsset[] = [
     summary: 'A product-led path from technical validation to controlled remediation, fleet governance, cloud engineering and managed infrastructure.',
     covers: 'PQA signals, trust progression, incident economics, competitive positioning, proof requirements, Fleet or MSP graduation and account depth.',
     reader: 'CTO, platform, SRE and infrastructure leaders plus enterprise commercial teams.',
-    sections: ['Remediation-first thesis', 'PQA signals', 'Trigger intelligence', 'Competitive intelligence', 'Observe to approve to automate', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
+    sections: ['Remediation-first position', 'PQA signals', 'Trigger intelligence', 'Competitive intelligence', 'Observe to approve to automate', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
     id: 'engineering-playbook', number: '04', name: 'Regulated Engineering GTM Playbook', file: 'downloads/regulated-engineering-gtm-playbook-v2-2.pdf', ready: true, format: 'PDF', version: 'V2.2',
@@ -112,13 +112,13 @@ export const libraryAssets: LibraryAsset[] = [
     summary: 'The complete architecture connecting market focus, triggers, diagnosis, conversion, expansion, retention and commercial ownership.',
     covers: 'All four commercial engines, account scoring, pipeline discipline, installed-base strategy, partners, readiness, leading indicators and the 180-day plan.',
     reader: 'CEO, founders, commercial leadership, product leadership and senior engineering stakeholders.',
-    sections: ['Strategic thesis', 'Unified operating system', 'Four commercial engines', 'Account acquisition and scoring', 'Pipeline and expansion', '180-day execution and ownership'], type: 'Master strategy document',
+    sections: ['Strategic direction', 'Unified operating system', 'Four commercial engines', 'Account acquisition and scoring', 'Pipeline and expansion', '180-day execution and ownership'], type: 'Master strategy document',
   },
   {
     id: 'executive-brief', number: '06', name: 'Executive Strategy Brief', file: 'downloads/executive-strategy-brief-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
-    description: 'A concise CEO readout of the commercial thesis, priorities and operating sequence.',
+    description: 'A concise CEO readout of the commercial direction, priorities and operating sequence.',
     summary: 'A five-minute leadership brief explaining the opportunity, system, first focus areas, selling discipline and enterprise expansion logic.',
-    covers: 'Operating thesis, engine priorities, trigger-based acquisition, discovery, pipeline, ownership, 180-day execution and success indicators.',
+    covers: 'Operating direction, engine priorities, trigger-based acquisition, discovery, pipeline, ownership, 180-day execution and success indicators.',
     reader: 'CEO, founders, board members and senior commercial or technology stakeholders.',
     sections: ['The opportunity', 'Commercial system', 'Where to focus first', 'How to sell', 'What commercial ownership means', 'Enterprise entry and expansion'], type: 'Executive strategy brief',
   },
@@ -172,10 +172,7 @@ export const products: Product[] = [
     engineeringAdjacency: 'Custom EHR or API work, healthcare data, AI, cloud or compliance requirements that extend beyond standard product configuration.',
     managedAdjacency: 'Ongoing operational ownership only when deployment scale, support, cloud or reliability requirements create a real service boundary.',
     gaps: ['Enterprise ACV and discount authority', 'Implementation margin and capacity', 'Referenceable outcomes and renewal history', 'Production EHR depth by vendor', 'Current security and compliance artefacts'],
-    targets: [
-      { company: 'Aster DM Healthcare, UAE', fact: 'The supplied playbook records a February 2026 announcement of AED 1 billion in UAE expansion and continued digital, HIS and AI investment.', hypothesis: 'Expansion may create a need to standardize patient-flow and front-office visibility across locations.', question: 'How are patient-flow and front-office workflows being standardized as new capacity comes online?' },
-      { company: 'Universal Health Services / Talkspace, US', fact: 'The supplied playbook records completion of the Talkspace acquisition in August 2026.', hypothesis: 'A combined virtual and physical behavioral-health continuum may create journey and scheduling integration questions.', question: 'Where is the patient journey hardest to keep consistent across virtual and physical settings?' },
-    ],
+    targets: [],
     marketIndicator: { state: 'Evidence-backed Market Indicator', text: 'Patient-engagement category growth supports investigation in active markets, but category size is not clinIQ revenue.', source: 'Supplied clinIQ GTM Playbook V2.3' },
     assetId: 'cliniq-playbook',
   },
@@ -218,10 +215,7 @@ export const products: Product[] = [
     engineeringAdjacency: 'Custom core integration, insurance data or AI, compliance architecture and cloud requirements that no longer fit clean product configuration.',
     managedAdjacency: 'Workflow optimization, support or cloud operations only when the operating requirement is recurring and explicitly owned.',
     gaps: ['Actual enterprise ACV and custom-development pricing', 'Gross margin and discount authority', 'Referenceable deployments and accuracy evidence', 'Supported core versions and production integration depth', 'Historical expansion and services attachment'],
-    targets: [
-      { company: 'QBE / Beazley in the Lloyd\'s market', fact: 'The supplied playbook records both as participants in a 2026 secure singleton-claims collaboration pilot.', hypothesis: 'Modernization appetite is visible, but any approach must identify an unserved workflow rather than duplicate the pilot.', question: 'Which claims-document workflows remain outside the scope of current modernization initiatives?' },
-      { company: 'IndiaFirst Life', fact: 'The supplied playbook records an August 2026 Agentforce initiative covering underwriting, customer service and claims.', hypothesis: 'Salesforce is already an incumbent, so Regure must complement a remaining core or claims-workflow gap.', question: 'Which document-heavy workflows still require manual handling after the current programme scope?' },
-    ],
+    targets: [],
     marketIndicator: { state: 'Evidence-backed Market Indicator', text: 'Insurance analytics category estimates indicate demand context. Regure serviceability still depends on workflow fit, incumbent cores and procurement readiness.', source: 'Supplied Regure GTM Playbook V2.3' },
     assetId: 'regure-playbook',
   },
@@ -264,10 +258,7 @@ export const products: Product[] = [
     engineeringAdjacency: 'Recurring architectural faults, platform constraints or compliance requirements that cannot be solved by remediation playbooks alone.',
     managedAdjacency: 'Continuous infrastructure operations when multi-environment or fleet governance requires sustained ownership.',
     gaps: ['Fleet ACV and volume discounts', 'Support economics and service boundary', 'Independent production case studies', 'Security attestations and failure-mode documentation', 'Renewal, expansion and managed-services attachment'],
-    targets: [
-      { company: 'Airwallex, UK / EMEA', fact: 'The supplied playbook records a March 2026 EMEA investment announcement and engineering expansion in London.', hypothesis: 'Greater platform scale may increase change rate and on-call complexity, but incident burden must be validated.', question: 'Which recurring production incidents still require manual engineer intervention as the platform scales?' },
-      { company: 'Core42 / e& UAE', fact: 'The supplied playbook records a July 2026 Sovereign AI Compute launch focused on in-country infrastructure and resilience.', hypothesis: 'Infrastructure scale creates a credible controlled-remediation discussion, while a sophisticated operator may prefer to build internally.', question: 'Which known infrastructure events are held back from automation by authority, verification or change control?' },
-    ],
+    targets: [],
     marketIndicator: { state: 'Evidence-backed Market Indicator', text: 'AIOps category growth supports investigation, but the sharper commercial question is the operational gap between detection and verified remediation.', source: 'Supplied SentienGuard GTM Playbook V2.3' },
     assetId: 'sentienguard-playbook',
   },
