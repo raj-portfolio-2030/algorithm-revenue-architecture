@@ -75,7 +75,7 @@ export const valueLayers = [
 
 export const libraryAssets: LibraryAsset[] = [
   {
-    id: 'cliniq-playbook', number: '01', name: 'clinIQ GTM Playbook', file: '/downloads/cliniq-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'cliniq-playbook', number: '01', name: 'clinIQ GTM Playbook', file: 'downloads/cliniq-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Clinic-operations growth motion for active US, UAE, UK and Saudi Arabia markets. India excluded.',
     summary: 'A trigger-led enterprise growth system for positioning clinIQ as the operational layer around the clinic journey and existing EHR or PAS.',
     covers: 'Industry focus, ICP, buying committee, workflow triggers, competitive boundaries, diagnosis, business-case scoping, proof and account expansion.',
@@ -83,7 +83,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Executive understanding', 'ICP and buying committee', 'Trigger intelligence', 'Competitive intelligence', 'Business-case scoping', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'regure-playbook', number: '02', name: 'Regure GTM Playbook', file: '/downloads/regure-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'regure-playbook', number: '02', name: 'Regure GTM Playbook', file: 'downloads/regure-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Insurance workflow and document intelligence around the existing core platform.',
     summary: 'An enterprise motion for entering through one claims or document workflow without forcing unnecessary core replacement.',
     covers: 'Insurance ICP, Guidewire and Duck Creek adjacency, claims-document triggers, business-case models, guided proof and enterprise value drivers.',
@@ -91,7 +91,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Commercial thesis', 'Buyer committee', 'Adjacent monopoly boundary', 'Competitive intelligence', 'Five-stage sales process', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'sentienguard-playbook', number: '03', name: 'SentienGuard GTM Playbook', file: '/downloads/sentienguard-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'sentienguard-playbook', number: '03', name: 'SentienGuard GTM Playbook', file: 'downloads/sentienguard-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Autonomous remediation and controlled self-healing infrastructure growth motion.',
     summary: 'A product-led path from technical validation to controlled remediation, fleet governance, cloud engineering and managed infrastructure.',
     covers: 'PQA signals, trust progression, incident economics, competitive positioning, proof requirements, Fleet or MSP graduation and account depth.',
@@ -99,7 +99,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Remediation-first thesis', 'PQA signals', 'Trigger intelligence', 'Competitive intelligence', 'Observe to approve to automate', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'engineering-playbook', number: '04', name: 'Regulated Engineering GTM Playbook', file: '/downloads/regulated-engineering-gtm-playbook-v2-2.pdf', ready: true, format: 'PDF', version: 'V2.2',
+    id: 'engineering-playbook', number: '04', name: 'Regulated Engineering GTM Playbook', file: 'downloads/regulated-engineering-gtm-playbook-v2-2.pdf', ready: true, format: 'PDF', version: 'V2.2',
     description: 'Compliance-native engineering, modernization and managed infrastructure. Outcome, not capacity.',
     summary: 'A problem-led commercial system for surgical-strike engineering in regulated and expensive-to-get-wrong environments.',
     covers: 'Priority plays, competitive frame, compliance-by-architecture, fixed price versus T&M, recovery motion, scoring and installed-base expansion.',
@@ -107,7 +107,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Positioning', 'Priority surgical-strike plays', 'Competitive frame', 'Compliance-by-architecture', 'Failed modernization recovery', 'Existing-customer expansion'], type: 'Regulated engineering playbook',
   },
   {
-    id: 'master-architecture', number: '05', name: 'Master Commercial Growth Architecture', file: '/downloads/master-commercial-growth-architecture-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'master-architecture', number: '05', name: 'Master Commercial Growth Architecture', file: 'downloads/master-commercial-growth-architecture-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'The unified operating system for products, regulated engineering, account intelligence and expansion.',
     summary: 'The complete architecture connecting market focus, triggers, diagnosis, conversion, expansion, retention and commercial ownership.',
     covers: 'All four commercial engines, account scoring, pipeline discipline, installed-base strategy, partners, readiness, leading indicators and the 180-day plan.',
@@ -115,7 +115,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Strategic thesis', 'Unified operating system', 'Four commercial engines', 'Account acquisition and scoring', 'Pipeline and expansion', '180-day execution and ownership'], type: 'Master strategy document',
   },
   {
-    id: 'executive-brief', number: '06', name: 'Executive Strategy Brief', file: '/downloads/executive-strategy-brief-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'executive-brief', number: '06', name: 'Executive Strategy Brief', file: 'downloads/executive-strategy-brief-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'A concise CEO readout of the commercial thesis, priorities and operating sequence.',
     summary: 'A five-minute leadership brief explaining the opportunity, system, first focus areas, selling discipline and enterprise expansion logic.',
     covers: 'Operating thesis, engine priorities, trigger-based acquisition, discovery, pipeline, ownership, 180-day execution and success indicators.',
@@ -123,7 +123,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['The opportunity', 'Commercial system', 'Where to focus first', 'How to sell', 'What commercial ownership means', 'Enterprise entry and expansion'], type: 'Executive strategy brief',
   },
   {
-    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: '/downloads/executive-presentation-v2-2.pptx', ready: true, format: 'PPTX', version: 'V2.2',
+    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: 'downloads/executive-presentation-v2-2.pptx', ready: true, format: 'PPTX', version: 'V2.2',
     description: 'The leadership conversation deck that complements the website without duplicating it.',
     summary: 'A concise ten-slide conversation aid covering what was heard, what is understood, where to start and how to create qualified traction.',
     covers: 'The opportunity, four engines, market focus, account scoring, outreach discipline, diagnosis, expansion, ownership and first 180 days.',
@@ -372,10 +372,22 @@ export const feedbackLoop = ['Customer insight', 'Product feedback', 'Roadmap in
 export const valueRealizationLoop = ['Implementation', 'Adoption', 'Value realization', 'Executive review', 'Expansion', 'Retention', 'Referenceability'];
 
 export const experienceEvidence = [
-  { category: 'Healthcare / Quality SaaS', examples: 'LIMS and quality workflows', work: 'Market research, ICP, discovery, workflow mapping, positioning, implementation coordination, feedback and adoption.' },
-  { category: 'Insurance / Engineering', examples: 'Guidewire and specialist engineering', work: 'Technical requirements, staffing solution where relevant, customer lifecycle and delivery alignment.' },
-  { category: 'Digital Products / AI', examples: 'B2B marketplace and AI translation', work: 'Opportunity discovery, product positioning, requirements, technical coordination and commercial closure.' },
+  { industry: 'Insurance / Enterprise Technology', requirement: 'Guidewire-related resource and platform requirement', challenge: 'Niche capability aligned to enterprise insurance architecture', approach: 'Requirements discovery, solution and resource alignment, technical-commercial coordination and customer lifecycle support', outcome: 'Delivery acceleration and flexible specialist capacity', relevance: 'Regure and insurance engineering' },
+  { industry: 'Laboratory / Testing & Inspection', requirement: 'Laboratory workflow digitization', challenge: 'Manual sample, workflow and reporting processes', approach: 'Discovery, workflow mapping, SaaS LIMS positioning and implementation discussions', outcome: 'Digitized workflows, improved sample tracking and reporting visibility', relevance: 'clinIQ-style workflow digitization and SaaS adoption' },
+  { industry: 'Food / FMCG Quality', requirement: 'Quality management and batch traceability', challenge: 'Fragmented quality tracking and manual reporting', approach: 'Business discovery, digital workflow design, product collaboration and adoption support', outcome: 'Improved quality tracking, batch visibility and reporting efficiency', relevance: 'Regulated workflow selling, adoption and product feedback' },
+  { industry: 'Energy Trading Technology', requirement: 'Niche ETRM and Java engineering support', challenge: 'Specialist platform requirements and difficult-to-source technical skills', approach: 'Requirement alignment, engineering capability positioning and delivery coordination', outcome: 'Flexible access to specialist engineering capability', relevance: 'Regulated engineering and enterprise platform ecosystems' },
+  { industry: 'AI / Enterprise Software', requirement: 'AI-enabled marketplace and multilingual automation use cases', challenge: 'Translate business requirements into practical AI workflows', approach: 'Opportunity identification, AI/NLP positioning, requirements shaping and technical-commercial coordination', outcome: 'Delivered AI-enabled workflows and integration use cases', relevance: 'AI engineering' },
 ];
+
+export const sampleExecutions = [
+  { engine: 'clinIQ', target: 'Denova Collaborative Health', industry: 'Outpatient behavioral health / integrated care · US', score: 88, scoreDetail: 'Fit 24 · Trigger 24 · Pain 17 · Access 10 · Expansion 13', trigger: 'New integrated-care clinics and service-line expansion announced Mar-Jul 2026.', evidence: 'Official company announcements; strong first-party evidence.', buyers: 'CEO/COO; clinic operations; CIO/IT/EHR owner; RCM/operations leadership.', fact: 'Public announcements document physical-footprint and virtual-care expansion.', hypothesis: 'Multi-site growth may increase pressure to standardize patient access, scheduling, intake and reporting.', question: 'Which patient-access and operating workflows are hardest to keep consistent as locations and programs expand?', wedge: 'Clinic Operations & Revenue Assessment focused on one location or cross-site workflow.', proof: 'Baseline workflow, touchpoints, scheduling/flow measures, adoption and integration feasibility.', growth: 'One workflow/site → patient/location scope → modules → enterprise support → EHR/API integration → healthcare engineering.', kill: 'Existing stack solves it; no owner; infeasible integration; no measurable need.', next: 'Validate EHR/PAS, patient-access stack and operations leadership.' },
+  { engine: 'Regure', target: 'The Cincinnati Insurance Company', industry: 'Property & casualty insurance · US', score: 89, scoreDetail: 'Fit 25 · Trigger 25 · Pain 17 · Access 10 · Expansion 12', trigger: 'Guidewire ClaimCenter deployment and continued multi-line rollout announced 4 Dec 2025.', evidence: 'Guidewire first-party announcement and platform evidence.', buyers: 'CIO/COO/Chief Claims Officer; claims operations; Guidewire architecture; security; procurement.', fact: 'ClaimCenter is live for workers’ compensation and rollout continues across other lines.', hypothesis: 'Document-heavy or exception workflows may remain adjacent to the core during transformation.', question: 'Which workflows still rely on email, manual queues or adjacent tools after ClaimCenter owns the core lifecycle?', wedge: 'Claims Workflow Friction Assessment around one document or exception workflow.', proof: 'Workflow map, cycle time, touchpoints, document handling, exceptions, integration feasibility and acceptance.', growth: 'One workflow → users/team → workflows/LOBs → APIs/core integration → private cloud/governance → insurance engineering.', kill: 'Native ecosystem covers it; no gap; procurement exclusion; infeasible integration/security.', next: 'Map transformation leadership, implementation partners and adjacent workflow initiatives.' },
+  { engine: 'SentienGuard', target: 'Airwallex', industry: 'Global fintech / payments infrastructure · EMEA growth', score: 91, scoreDetail: 'Fit 25 · Trigger 24 · Pain 18 · Access 10 · Expansion 14', trigger: 'EMEA investment and London engineering expansion announced Mar 2026, corroborated by platform/SRE roles.', evidence: 'Official newsroom and first-party careers material.', buyers: 'CTO/CIO/VP Engineering; infrastructure/platform/SRE; security and architecture.', fact: 'Public material documents engineering scale, Kubernetes/cloud infrastructure, incident response and reliability work.', hypothesis: 'Platform growth may increase repetitive SRE load even with observability and internal automation.', question: 'Which incident classes still require repeatable human diagnosis and remediation after monitoring detects the issue?', wedge: 'Technical validation on narrow, reversible runbooks alongside existing monitoring.', proof: 'Known incident class, safe execution, verification/rollback, audit trail, SRE acceptance and security review.', growth: 'Nodes → environments → teams → Fleet governance → RBAC/audit/support → cloud engineering → managed operations.', kill: 'Internal automation solves it; security rejection; insufficient fit; build preference.', next: 'Identify a narrow recurring incident class suitable for controlled validation.' },
+  { engine: 'Engineering', target: 'Kotak Life Insurance', industry: 'Life insurance / regulated financial services · India', score: 86, scoreDetail: 'Fit 24 · Trigger 24 · Pain 16 · Access 9 · Expansion 13', trigger: 'Public 2026 AI-led growth direction across underwriting, claims, fraud, sales and customer engagement.', evidence: 'Executive interview, public AI activity and investor material; not a procurement announcement.', buyers: 'CTO/digital transformation; CIO/COO; business owners; architecture/data/AI; risk/security/compliance.', fact: 'Public material discusses AI across multiple insurance functions with trust, compliance and measurable-impact priorities.', hypothesis: 'Moving from pilots to production may expose data, integration, governance and operability requirements.', question: 'Which AI use cases are constrained by data access, legacy integration, governance or production readiness?', wedge: 'Production AI / Agentic AI Readiness Assessment around one business process.', proof: 'Defined outcome, architecture, data readiness, controls, acceptance criteria and operability plan.', growth: 'Assessment → production AI/data strike → modernization/compliance architecture → platform program → managed infrastructure.', kill: 'Existing partners cover it; no funded event; strategy-only scope; inadequate access; compliance blocker.', next: 'Validate funded production initiatives and map accountable owners.' },
+];
+
+export const prioritizationCriteria = ['Market fit', 'Proof available', 'Sales-cycle length', 'Referenceability', 'Implementation readiness', 'Expansion potential', 'Founder / technical dependency'];
+export const disqualificationCriteria = ['No identifiable business problem', 'No meaningful trigger', 'No buyer or champion access', 'Only price-shopping', 'Impossible delivery requirement', 'Irresponsible roadmap commitment required', 'No critical event', 'Poor strategic fit'];
 
 export const ceoFields = [
   ['priorities', 'Top three commercial priorities for the next 12 months'],
