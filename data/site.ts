@@ -5,7 +5,7 @@ export type EvidenceItem = { state: EvidenceState; text: string; source?: string
 export type LibraryAsset = {
   id: string; number: string; name: string; file: string; ready: boolean;
   format: 'PDF' | 'PPTX'; version: string; description: string; summary: string;
-  covers: string; reader: string; sections: string[]; type: string;
+  covers: string; reader: string; sections: string[]; type: string; previewFile?: string;
 };
 
 export type Product = {
@@ -123,7 +123,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['The opportunity', 'Commercial system', 'Where to focus first', 'How to sell', 'What commercial ownership means', 'Enterprise entry and expansion'], type: 'Executive strategy brief',
   },
   {
-    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: '/downloads/executive-presentation-v2-2.pptx', ready: true, format: 'PPTX', version: 'V2.2',
+    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: '/downloads/The_Algorithm_Executive_10_Slide_Presentation_Final.pptx', previewFile: '/downloads/The_Algorithm_Executive_10_Slide_Presentation_Final.pdf', ready: true, format: 'PPTX', version: 'V2.2',
     description: 'The leadership conversation deck that complements the website without duplicating it.',
     summary: 'A concise ten-slide conversation aid covering what was heard, what is understood, where to start and how to create qualified traction.',
     covers: 'The opportunity, four engines, market focus, account scoring, outreach discipline, diagnosis, expansion, ownership and first 180 days.',

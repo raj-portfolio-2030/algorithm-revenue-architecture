@@ -13,7 +13,7 @@ type ProductGrowthCardProps = {
 
 export function ProductGrowthCard({ product, asset, onViewIntelligence, onOpenAsset }: ProductGrowthCardProps) {
   return <article className={`product-panel product-${product.id}`} aria-labelledby={`product-${product.id}-title`}>
-    <header className="product-lead"><div><p className="data-label">Our understanding</p><h3 id={`product-${product.id}-title`}>{product.name}</h3><p>{product.understanding}</p></div><div><p className="data-label">Core operational problem</p><p>{product.operationalProblem}</p><p className="market-line"><strong>Active / priority markets</strong>{product.markets.join(' · ')}</p>{product.id === 'cliniq' && <span className="exclusion">India excluded</span>}</div></header>
+    <header className="product-lead"><div><p className="data-label">Our understanding</p><h3 id={`product-${product.id}-title`}>{product.name}</h3><p>{product.understanding}</p><div className="product-lead-actions"><button className="button outline" type="button" onClick={() => onViewIntelligence(product)}>Explore Enterprise Strategy <span aria-hidden="true">↗</span></button><GTMAssetButton compact asset={asset} onOpen={onOpenAsset} /></div></div><div><p className="data-label">Core operational problem</p><p>{product.operationalProblem}</p><p className="market-line"><strong>Active / priority markets</strong>{product.markets.join(' · ')}</p></div></header>
     <EnterpriseEntryPath />
     <div className="enterprise-grid">
       <IndustryFocus focus={product.industryFocus} bestFitIcp={product.bestFitIcp} triggers={product.triggers} />
@@ -27,6 +27,5 @@ export function ProductGrowthCard({ product, asset, onViewIntelligence, onOpenAs
       <div><p className="data-label">Managed-services adjacency</p><p>{product.managedAdjacency}</p></div>
       <div className="wide gap-card"><EvidenceBadge state="CEO Input Required" /><ul>{product.gaps.map(item => <li key={item}>{item}</li>)}</ul></div>
     </div>
-    <div className="product-actions"><button className="button outline" type="button" onClick={() => onViewIntelligence(product)}>Explore Enterprise Strategy <span aria-hidden="true">↗</span></button><GTMAssetButton asset={asset} onOpen={onOpenAsset} /></div>
   </article>;
 }
