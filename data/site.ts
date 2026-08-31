@@ -57,6 +57,13 @@ export const commercialLifecycle = [
   ['Retain', 'Value governance, renewal and strategic-account development'],
 ];
 
+export const accountValueLifecycle = [
+  ['Land', 'Solve one contained and measurable problem.'],
+  ['Expand', 'Increase product, workflow, site, team or environment scope.'],
+  ['Transform', 'Address deeper integration, data, cloud, AI or compliance requirements.'],
+  ['Retain', 'Keep value visible through adoption, executive review and continuous improvement.'],
+];
+
 export const valueLayers = [
   { name: 'Product ARR', purpose: 'Create a repeatable product relationship.', trigger: 'Validated operational fit and adoption.', proof: 'Customer-specific workflow evidence.', next: 'Modules, sites, users or environments.' },
   { name: 'Implementation', purpose: 'Configure the product around the real operating workflow.', trigger: 'Deployment and integration requirements.', proof: 'Acceptance criteria and adoption baseline.', next: 'Broader rollout or integration.' },
@@ -68,7 +75,7 @@ export const valueLayers = [
 
 export const libraryAssets: LibraryAsset[] = [
   {
-    id: 'cliniq-playbook', number: '01', name: 'clinIQ GTM Playbook', file: 'downloads/cliniq-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'cliniq-playbook', number: '01', name: 'clinIQ GTM Playbook', file: '/downloads/cliniq-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Clinic-operations growth motion for active US, UAE, UK and Saudi Arabia markets. India excluded.',
     summary: 'A trigger-led enterprise growth system for positioning clinIQ as the operational layer around the clinic journey and existing EHR or PAS.',
     covers: 'Industry focus, ICP, buying committee, workflow triggers, competitive boundaries, diagnosis, business-case scoping, proof and account expansion.',
@@ -76,7 +83,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Executive understanding', 'ICP and buying committee', 'Trigger intelligence', 'Competitive intelligence', 'Business-case scoping', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'regure-playbook', number: '02', name: 'Regure GTM Playbook', file: 'downloads/regure-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'regure-playbook', number: '02', name: 'Regure GTM Playbook', file: '/downloads/regure-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Insurance workflow and document intelligence around the existing core platform.',
     summary: 'An enterprise motion for entering through one claims or document workflow without forcing unnecessary core replacement.',
     covers: 'Insurance ICP, Guidewire and Duck Creek adjacency, claims-document triggers, business-case models, guided proof and enterprise value drivers.',
@@ -84,7 +91,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Commercial position', 'Buyer committee', 'Adjacent monopoly boundary', 'Competitive intelligence', 'Five-stage sales process', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'sentienguard-playbook', number: '03', name: 'SentienGuard GTM Playbook', file: 'downloads/sentienguard-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'sentienguard-playbook', number: '03', name: 'SentienGuard GTM Playbook', file: '/downloads/sentienguard-gtm-playbook-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'Autonomous remediation and controlled self-healing infrastructure growth motion.',
     summary: 'A product-led path from technical validation to controlled remediation, fleet governance, cloud engineering and managed infrastructure.',
     covers: 'PQA signals, trust progression, incident economics, competitive positioning, proof requirements, Fleet or MSP graduation and account depth.',
@@ -92,7 +99,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Remediation-first position', 'PQA signals', 'Trigger intelligence', 'Competitive intelligence', 'Observe to approve to automate', 'Enterprise monetization and expansion'], type: 'Product GTM playbook',
   },
   {
-    id: 'engineering-playbook', number: '04', name: 'Regulated Engineering GTM Playbook', file: 'downloads/regulated-engineering-gtm-playbook-v2-2.pdf', ready: true, format: 'PDF', version: 'V2.2',
+    id: 'engineering-playbook', number: '04', name: 'Regulated Engineering GTM Playbook', file: '/downloads/regulated-engineering-gtm-playbook-v2-2.pdf', ready: true, format: 'PDF', version: 'V2.2',
     description: 'Compliance-native engineering, modernization and managed infrastructure. Outcome, not capacity.',
     summary: 'A problem-led commercial system for surgical-strike engineering in regulated and expensive-to-get-wrong environments.',
     covers: 'Priority plays, competitive frame, compliance-by-architecture, fixed price versus T&M, recovery motion, scoring and installed-base expansion.',
@@ -100,7 +107,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Positioning', 'Priority surgical-strike plays', 'Competitive frame', 'Compliance-by-architecture', 'Failed modernization recovery', 'Existing-customer expansion'], type: 'Regulated engineering playbook',
   },
   {
-    id: 'master-architecture', number: '05', name: 'Master Commercial Growth Architecture', file: 'downloads/master-commercial-growth-architecture-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'master-architecture', number: '05', name: 'Master Commercial Growth Architecture', file: '/downloads/master-commercial-growth-architecture-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'The unified operating system for products, regulated engineering, account intelligence and expansion.',
     summary: 'The complete architecture connecting market focus, triggers, diagnosis, conversion, expansion, retention and commercial ownership.',
     covers: 'All four commercial engines, account scoring, pipeline discipline, installed-base strategy, partners, readiness, leading indicators and the 180-day plan.',
@@ -108,7 +115,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['Strategic direction', 'Unified operating system', 'Four commercial engines', 'Account acquisition and scoring', 'Pipeline and expansion', '180-day execution and ownership'], type: 'Master strategy document',
   },
   {
-    id: 'executive-brief', number: '06', name: 'Executive Strategy Brief', file: 'downloads/executive-strategy-brief-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
+    id: 'executive-brief', number: '06', name: 'Executive Strategy Brief', file: '/downloads/executive-strategy-brief-v2-3.pdf', ready: true, format: 'PDF', version: 'V2.3',
     description: 'A concise CEO readout of the commercial direction, priorities and operating sequence.',
     summary: 'A five-minute leadership brief explaining the opportunity, system, first focus areas, selling discipline and enterprise expansion logic.',
     covers: 'Operating direction, engine priorities, trigger-based acquisition, discovery, pipeline, ownership, 180-day execution and success indicators.',
@@ -116,7 +123,7 @@ export const libraryAssets: LibraryAsset[] = [
     sections: ['The opportunity', 'Commercial system', 'Where to focus first', 'How to sell', 'What commercial ownership means', 'Enterprise entry and expansion'], type: 'Executive strategy brief',
   },
   {
-    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: 'downloads/executive-presentation-v2-2.pptx', ready: true, format: 'PPTX', version: 'V2.2',
+    id: 'executive-presentation', number: '07', name: 'Executive 10-Slide Presentation', file: '/downloads/executive-presentation-v2-2.pptx', ready: true, format: 'PPTX', version: 'V2.2',
     description: 'The leadership conversation deck that complements the website without duplicating it.',
     summary: 'A concise ten-slide conversation aid covering what was heard, what is understood, where to start and how to create qualified traction.',
     covers: 'The opportunity, four engines, market focus, account scoring, outreach discipline, diagnosis, expansion, ownership and first 180 days.',
