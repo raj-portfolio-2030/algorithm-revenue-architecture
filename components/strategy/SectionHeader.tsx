@@ -6,9 +6,9 @@ type SectionHeaderProps = {
   inverse?: boolean;
 };
 
-export function SectionHeader({ index, label, title, copy, inverse = false }: SectionHeaderProps) {
+export function SectionHeader({ label, title, copy, inverse = false }: SectionHeaderProps) {
   return <header className={`section-head${inverse ? ' inverse' : ''}`}>
-    <p className="section-index">{index} / {label}</p>
+    <p className="section-index">{label}</p>
     <div><h2>{title}</h2>{copy && <p>{copy}</p>}</div>
   </header>;
 }

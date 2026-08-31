@@ -57,13 +57,6 @@ export const commercialLifecycle = [
   ['Retain', 'Value governance, renewal and strategic-account development'],
 ];
 
-export const accountValueLifecycle = [
-  ['Land', 'Solve one contained and measurable problem.'],
-  ['Expand', 'Increase product, workflow, site, team or environment scope.'],
-  ['Transform', 'Address deeper integration, data, cloud, AI or compliance requirements.'],
-  ['Retain', 'Keep value visible through adoption, executive review and continuous improvement.'],
-];
-
 export const valueLayers = [
   { name: 'Product ARR', purpose: 'Create a repeatable product relationship.', trigger: 'Validated operational fit and adoption.', proof: 'Customer-specific workflow evidence.', next: 'Modules, sites, users or environments.' },
   { name: 'Implementation', purpose: 'Configure the product around the real operating workflow.', trigger: 'Deployment and integration requirements.', proof: 'Acceptance criteria and adoption baseline.', next: 'Broader rollout or integration.' },
@@ -380,24 +373,28 @@ export const sampleExecutions = [
 export const prioritizationCriteria = ['Market fit', 'Proof available', 'Sales-cycle length', 'Referenceability', 'Implementation readiness', 'Expansion potential', 'Founder / technical dependency'];
 export const disqualificationCriteria = ['No identifiable business problem', 'No meaningful trigger', 'No buyer or champion access', 'Only price-shopping', 'Impossible delivery requirement', 'Irresponsible roadmap commitment required', 'No critical event', 'Poor strategic fit'];
 
-export const ceoFields = [
-  ['priorities', 'Top three commercial priorities for the next 12 months'],
-  ['enginePriority', 'Which products or services should be scaled first, and why?'],
-  ['productCustomers', 'Current customer count by product'],
-  ['productEconomics', 'Current product ARR, MRR or contract value'],
-  ['serviceClients', 'Current services clients by industry and service line'],
-  ['pipeline', 'Current qualified pipeline'],
-  ['dealSize', 'Average deal sizes and sales cycles'],
-  ['pricing', 'Pricing, packaging and discount authority'],
-  ['margins', 'Gross margins and implementation economics'],
-  ['winsLosses', 'Why do we win, stall or lose?'],
-  ['proof', 'Referenceable case studies and quantified outcomes'],
-  ['productGaps', 'Product, security and integration gaps'],
-  ['capacity', 'Current delivery and support capacity'],
-  ['partners', 'Active partnerships and certifications'],
-  ['installedBase', 'Existing-account expansion opportunities to investigate'],
-  ['success180', 'Definition of successful commercial traction after 180 days'],
-  ['ownership', 'What should the commercial leader own independently?'],
-  ['leadership', 'Where should CEO and technical leadership stay involved?'],
-  ['firstProblem', 'Single biggest commercial problem to solve first'],
+type CEOField = readonly [key: string, label: string];
+type CEOGroup = { title: string; fields: readonly CEOField[] };
+
+export const ceoGroups: readonly CEOGroup[] = [
+  { title: 'Direction', fields: [
+    ['priorities', 'What are the top three commercial priorities for the next 12 months?'],
+    ['enginePriority', 'Which products/services should we prioritize first, and why?'],
+  ] },
+  { title: 'Commercial Reality', fields: [
+    ['customerBase', 'What does the current customer base look like across products and services?'],
+    ['commercialPicture', 'What does the current commercial picture look like: revenue/ARR, typical deal size, sales cycle and qualified pipeline?'],
+    ['winsLosses', 'Why do we currently win, stall or lose opportunities?'],
+  ] },
+  { title: 'Growth & Readiness', fields: [
+    ['expansionPotential', 'Which existing customer relationships have legitimate expansion potential?'],
+    ['proofReadiness', 'What proof is commercially usable today: case studies, outcomes, references, security/compliance and integrations?'],
+    ['growthConstraints', 'What delivery, product or technical constraints could limit commercial growth?'],
+  ] },
+  { title: 'Ownership & Success', fields: [
+    ['ownershipBoundary', 'What should the commercial leader own independently, and where should CEO/technical leadership remain involved?'],
+    ['success180', 'What would successful commercial traction after 180 days look like?'],
+  ] },
 ] as const;
+
+export const ceoFields: readonly CEOField[] = ceoGroups.flatMap(group => group.fields);
